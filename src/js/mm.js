@@ -2,12 +2,17 @@
 var mm = {
 		init: function(){
 			console.log("mm init!");
+			mm.bindings();
 		},
 		bindings: function(){
-			
+			$("#startup").live("click", function(){
+				mm.showpanel('#menu')
+			})
 		},
-		showpanel: function(){
-			
+		showpanel: function(pnl){
+			$(".panel")
+				.addClass("hide")
+				.find(pnl).removeClass("hide");
 		}
 		
 }
