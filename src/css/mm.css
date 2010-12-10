@@ -1,7 +1,7 @@
 /** styles for milestone monsters **/
 
-.hide {
-	display: none;
+div.hide {
+	left: -400px;
 }
 
 
@@ -13,6 +13,7 @@
   background-color: #006385;
   height: 460px;
   width: 320px;
+  font-family: Arial, sans-serif;
 }
 
 .panel {
@@ -47,5 +48,11 @@
   letter-spacing: 0em;
   word-spacing: 0em;
   line-height: 1em;
-  color: #006385;
+  color: #0091C2; /** lighter blue than the bg **/
+}
+
+.panel .menu {
+  width: 280px;
+  padding-top: 100px;
+  text-align: center;
 }
